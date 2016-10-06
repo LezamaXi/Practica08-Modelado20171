@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Snake</class>
+ <widget class="QMainWindow" name="Snake">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>712</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Juego Snake</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QTableWidget" name="Tabla">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>537</height>
+              </size>
+             </property>
+             <property name="rowCount">
+              <number>14</number>
+             </property>
+             <property name="columnCount">
+              <number>14</number>
+             </property>
+             <attribute name="horizontalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderCascadingSectionResizes">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>10</number>
+             </attribute>
+             <attribute name="horizontalHeaderHighlightSections">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="horizontalHeaderMinimumSectionSize">
+              <number>1</number>
+             </attribute>
+             <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderDefaultSectionSize">
+              <number>10</number>
+             </attribute>
+             <attribute name="verticalHeaderMinimumSectionSize">
+              <number>1</number>
+             </attribute>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_15">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QGroupBox" name="Size">
+             <property name="title">
+              <string>Configuracion del Juego</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_21">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>2</number>
+              </property>
+              <property name="bottomMargin">
+               <number>2</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_20">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="Columnas" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_18">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_17">
+                     <item>
+                      <widget class="QLabel" name="label_5">
+                       <property name="text">
+                        <string>Columnas</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="spinBox_3"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="Filas" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_23">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_20">
+                     <item>
+                      <widget class="QLabel" name="label_6">
+                       <property name="text">
+                        <string>Filas</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="spinBox_4"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="TamColumnas" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_24">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_21">
+                     <item>
+                      <widget class="QLabel" name="label_7">
+                       <property name="text">
+                        <string>Espera(ms)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="spinBox_5"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="Servidor">
+             <property name="title">
+              <string>Conexion</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>2</number>
+              </property>
+              <property name="bottomMargin">
+               <number>2</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="QWidget" name="URL" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_3">
+                     <item>
+                      <widget class="QLabel" name="label">
+                       <property name="text">
+                        <string>Url</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="Puerto" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_5">
+                     <item>
+                      <widget class="QLabel" name="label_2">
+                       <property name="text">
+                        <string>Puerto</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="spinBox">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="URLMaestro" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_11">
+                     <item>
+                      <widget class="QLabel" name="label_4">
+                       <property name="text">
+                        <string>Timeout</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="spinBox_2">
+                       <property name="inputMethodHints">
+                        <set>Qt::ImhDigitsOnly</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="LevantarServButton" native="true">
+                  <layout class="QVBoxLayout" name="verticalLayout_25">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_24">
+                     <item>
+                      <widget class="QPushButton" name="LevantarServidor">
+                       <property name="text">
+                        <string>Levantar Servidor</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="EmpiezaJuego">
+           <property name="text">
+            <string>Empieza el juego</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>816</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
